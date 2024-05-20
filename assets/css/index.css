@@ -157,11 +157,46 @@ button:hover {
 
 }
 
+
+.section-1 {
+    background: linear-gradient(to left, var(--color-1), var(--color-2)); 
+    border-radius: 50px;
+    margin-top: 70px;
+   
+}
+
+.section-1 h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    
+}
+.section-1 ol {
+    list-style: square;
+    padding: 30px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    
+}
+
+.section-1 li {
+    font-size: 20px;
+    line-height: 30px;
+    
+}
+
 .secao-2 {
    margin-top: 0;
    margin-bottom: 0;
    
 }
+
+.secao-2 button {
+    color: white;
+    text-decoration: none;
+}
+
 
 
 .secao-2 h1 {
@@ -181,6 +216,31 @@ button:hover {
   
 }
 
+
+@media screen and (max-width:  760px) {
+
+
+    .section-1 {
+        flex-direction: column;
+    }
+    .section-1 h1 {
+        font-size: 25px;
+        padding-top: 30px;
+    }
+
+    .section-1 ol {
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .section-1 li {
+        font-size: 14px;
+        line-height: 15px;
+        padding: 5px;
+        
+    }
+}
 @media screen and (max-width: 760px) {
     .secao-2 h1 {
         font-size: 38px;
@@ -202,6 +262,12 @@ button:hover {
          margin: 0 auto;
          height: 300px;
        
+    }
+
+    .secao-2 button {
+        text-align: center; 
+        display: block; 
+        margin: 20px auto 0
     }
 }
 
@@ -302,6 +368,7 @@ footer {
 .secao-video aside h2 {
    line-height: 50px;
    margin-bottom: 20px;
+   margin-top: 0px;
 }
 
 
@@ -316,3 +383,19 @@ footer {
 
 
 }
+
+.animation-web {
+    opacity: 0;
+    filter: hue-rotate(15px) ;;
+
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    transform: translateX(0);
+    opacity: 1;
+    filter: hue-rotate(0);
+    transition: all 2s;
+}
+
