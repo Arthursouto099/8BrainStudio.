@@ -66,6 +66,8 @@ main aside h2 {
     width: 600px;
 }
 
+ 
+
 a {
     color: white;
     text-decoration: none;
@@ -187,32 +189,41 @@ button:hover {
 }
 
 .secao-2 {
-   margin-top: 0;
-   margin-bottom: 0;
+   margin-top: 90px;
+   margin-bottom: 0px;
    
 }
 
 .secao-2 button {
     color: white;
     text-decoration: none;
+    text-align: center; 
+    display: block; 
+    margin: 20px auto 0; 
+    width: 200px;
+    height: 50px;
+
 }
 
 
 
 .secao-2 h1 {
     font-size: 50px;
-    max-width: 400px;
-    margin-top: 150px;
+    margin-top: 0px;
     line-height: 50px;
+    text-align: center;
    
+}
+
+.secao-2 p {
+    text-align: center;
 }
 
 
 .secao-2 article img {
-
-   margin-left: 120px;
-   margin-top: 120px;
-   height: 600px;
+    display: block;
+    margin: 0 auto ;
+    height: 400px;
   
 }
 
@@ -253,7 +264,7 @@ button:hover {
 
     .secao-2 {
         flex-direction: column;
-        margin-top: 0;
+        margin-top: 90px;
     }
 
     .secao-2 article img {
@@ -354,7 +365,7 @@ footer {
 
 .video-area iframe {
     position: absolute;
-    top: 60px;
+    top: 5px;
     bottom: 0px;
     left: 50px;
     width: 90%;
@@ -369,8 +380,22 @@ footer {
    line-height: 50px;
    margin-bottom: 20px;
    margin-top: 0px;
+   font-size: 52px;
 }
 
+.secao-video aside p  {
+    line-height: 18px;
+    max-width: 500px;
+    
+}
+
+
+.secao-video  {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+
+}
 
 
 
@@ -381,13 +406,27 @@ footer {
        height: 100%;
     }
 
+    .secao-video {
+     flex-direction: column;
+    }
+
+    .secao-video aside h2 {
+       font-size: 40px;
+       text-align: center;
+    }
+
+    .secao-video aside p {
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
 
 }
 
 .animation-web {
     opacity: 0;
-    filter: hue-rotate(15px) ;;
-
+    filter: hue-rotate(15px) ;
     transform: translateX(-100%);
     transition: all 2s;
 }
